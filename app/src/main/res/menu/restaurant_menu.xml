@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+
+        android:id="@+id/restaurant1"
+        android:title="Ilmir's Spicy Hot Dogs"
+        android:orderInCategory="1"></item>
+    <item
+
+        android:id="@+id/restaurant2"
+        android:title="Josh's American BBQ"
+        android:orderInCategory="1"></item>
+    <item
+
+        android:id="@+id/restaurant3"
+        android:title="Tori's Fresh Buns"
+        android:orderInCategory="1"></item>
+
+</menu>

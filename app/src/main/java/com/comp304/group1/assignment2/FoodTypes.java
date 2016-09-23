@@ -5,18 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class FoodTypes extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.food_types);
     }
+    public void onClickBtnNext2(View v){
 
-    public void onClickBtnNext1(View v){
-
-        Intent i = new Intent(MainActivity.this, FoodTypes.class);
+        Intent i = new Intent(FoodTypes.this, Restaurants.class);
         startActivity(i);
 
     }

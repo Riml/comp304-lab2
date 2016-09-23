@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Assignment2</string>
+    <string-array name="restaurant_array">
+        <item>Ilmir\'s Spicy Hot Dogs</item>
+        <item>Josh\'s American BBQ</item>
+        <item>Tori\'s Fresh Buns</item>
+    </string-array>
 </resources>

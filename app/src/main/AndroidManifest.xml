@@ -15,6 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FoodTypes" />
+        <activity android:name=".Restaurants" />
+        <activity android:name=".OrderInfo" />
+        <activity android:name=".CustDetail" />
+        <activity android:name=".AddOrder"></activity>
     </application>
 
 </manifest>
