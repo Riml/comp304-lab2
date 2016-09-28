@@ -1,8 +1,22 @@
 <resources>
     <string name="app_name">Assignment2</string>
-    <string-array name="restaurant_array">
+    <string name="next">Next</string>
+    <string name="chinese">Chinese</string>
+    <string name="italian">Italian</string>
+    <string name="american">American</string>
+    <string-array name="a_restaurant_array">
         <item>Ilmir\'s Spicy Hot Dogs</item>
         <item>Josh\'s American BBQ</item>
         <item>Tori\'s Fresh Buns</item>
+    </string-array>
+    <string-array name="i_restaurant_array">
+        <item>Ilmir\'s Spicy Pasta</item>
+        <item>Josh\'s Italian Lasagna</item>
+        <item>Tori\'s Fresh Cakes</item>
+    </string-array>
+    <string-array name="c_restaurant_array">
+        <item>Ilmir\'s Spicy Kimchi</item>
+        <item>Josh\'s Chinese Duck Roast</item>
+        <item>Tori\'s Fresh Rolls</item>
     </string-array>
 </resources>
