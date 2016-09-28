@@ -17,7 +17,8 @@
         android:id="@+id/btnNext3"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="122dp" />
+        android:layout_marginBottom="122dp"
+        android:onClick="onClickBtnNext3" />
 
     <Spinner
         android:layout_width="wrap_content"

@@ -64,5 +64,6 @@
         android:id="@+id/button3"
         android:layout_below="@+id/textView5"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="91dp" />
+        android:layout_marginTop="91dp"
+        android:onClick="onClickBtnNext4" />
 </RelativeLayout>

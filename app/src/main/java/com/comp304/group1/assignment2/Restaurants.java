@@ -19,4 +19,12 @@ public class Restaurants extends AppCompatActivity {
         return true;
     }
 
+    public void onClickBtnNext3(View v){
+
+        Intent i = new Intent(Restaurants.this, AddOrder.class);
+        startActivity(i);
+
+    }
+
+
 }
