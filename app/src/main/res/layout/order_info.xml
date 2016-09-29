@@ -9,56 +9,60 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.comp304.group1.assignment2.MainActivity">
 
-
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Order"
-        android:id="@+id/button3"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="148dp" />
+        android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" food type "
-        android:id="@+id/tvFoodType"
-        android:layout_marginTop="66dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignEnd="@+id/tvFoods" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order_details"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="res name"
-        android:id="@+id/tvResName"
-        android:layout_below="@+id/tvFoodType"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_name"
+            android:id="@+id/tvCustomerName" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="food oredr"
-        android:id="@+id/tvFoods"
-        android:layout_below="@+id/tvResName"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/tvCustomerAddress" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="name"
-        android:id="@+id/tvCustomerName"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/button3"
-        android:layout_marginTop="27dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_type"
+            android:id="@+id/tvFoodType" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="address"
-        android:id="@+id/tvCustomerAddress"
-        android:layout_below="@+id/tvFoods"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restaurant_name"
+            android:id="@+id/tvResName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_order_items"
+            android:id="@+id/tvFoods" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/place_new_order"
+            android:onClick="newOrderClick"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/new_order_btn" />
+
+    </LinearLayout>
+
+
 
 </RelativeLayout>

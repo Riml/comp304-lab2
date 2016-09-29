@@ -9,45 +9,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.comp304.group1.assignment2.MainActivity">
 
-
-    <CheckBox
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hot Dog"
-        android:id="@+id/chkHot"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="101dp" />
+        android:orientation="vertical">
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cookie"
-        android:id="@+id/chkCook"
-        android:layout_below="@+id/checkBox"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:text="@string/restaurant_name"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Steak"
-        android:id="@+id/chkSteak"
-        android:layout_below="@+id/chkCake"
-        android:layout_alignEnd="@+id/chkCake" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_1"
+            android:id="@+id/chk1" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cake"
-        android:id="@+id/chkCake"
-        android:layout_below="@+id/chkCook"
-        android:layout_alignParentStart="true" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_2"
+            android:id="@+id/chk2" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next"
-        android:id="@+id/btnNext4"
-        android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/chkCake" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_3"
+            android:id="@+id/chk3" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/next"
+            android:onClick="onClickBtnNext4"
+            android:id="@+id/btnNext4" />
+
+    </LinearLayout>
+
 </RelativeLayout>

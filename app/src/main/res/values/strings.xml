@@ -4,6 +4,22 @@
     <string name="chinese">Chinese</string>
     <string name="italian">Italian</string>
     <string name="american">American</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="check_1">Check 1</string>
+    <string name="check_2">Check 2</string>
+    <string name="check_3">Check 3</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="address">Address</string>
+    <string name="credit_card_no">Credit Card No.</string>
+    <string name="favourite_chef">Favourite Chef</string>
+    <string name="submit">Submit</string>
+    <string name="please_enter_your_information_below">Please enter your information below:</string>
+    <string name="food_type">Food Type</string>
+    <string name="order_details">Order Details</string>
+    <string name="food_order_items">Food Order Items</string>
+    <string name="place_new_order">Place New Order</string>
+
+    <!-- Restaurant Arrays by food type -->
     <string-array name="a_restaurant_array">
         <item>Ilmir\'s Spicy Hot Dogs</item>
         <item>Josh\'s American BBQ</item>
@@ -12,11 +28,54 @@
     <string-array name="i_restaurant_array">
         <item>Ilmir\'s Spicy Pasta</item>
         <item>Josh\'s Italian Lasagna</item>
-        <item>Tori\'s Fresh Cakes</item>
     </string-array>
     <string-array name="c_restaurant_array">
-        <item>Ilmir\'s Spicy Kimchi</item>
         <item>Josh\'s Chinese Duck Roast</item>
         <item>Tori\'s Fresh Rolls</item>
     </string-array>
+
+    <!-- Food arrays by restaurant -->
+    <string-array name="rest_1">
+        <item>Hot Dog</item>
+        <item>Sausage</item>
+        <item>Veggie Dog</item>
+    </string-array>
+
+    <string-array name="rest_2">
+        <item>Steak</item>
+        <item>Arctic Char</item>
+        <item>Ribs</item>
+    </string-array>
+
+    <string-array name="rest_3">
+        <item>Coconut Bun</item>
+        <item>Croissant</item>
+        <item>Cinnamon Roll</item>
+    </string-array>
+
+    <string-array name="rest_4">
+        <item>Spicy Penne</item>
+        <item>Spicy Spaghetti</item>
+        <item>Spicy Kraft Dinner</item>
+    </string-array>
+
+    <string-array name="rest_5">
+        <item>Beef Lasagna</item>
+        <item>Veggie Lasagna</item>
+        <item>Chicken Lasagna</item>
+    </string-array>
+
+    <string-array name="rest_6">
+        <item>Spicy Duck</item>
+        <item>Mild Duck</item>
+        <item>Pepper Duck</item>
+    </string-array>
+
+    <string-array name="rest_7">
+        <item>Dinner Roll</item>
+        <item>Rock and Roll</item>
+        <item>Drop and Roll</item>
+    </string-array>
+
+
 </resources>

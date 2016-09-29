@@ -41,14 +41,17 @@ public class Restaurants extends AppCompatActivity {
     }
 
     public void onClickBtnNext3(View v){
+        String selectedRestaurant = restaurantSpinner.getSelectedItem().toString();
         Intent i = new Intent(Restaurants.this, AddOrder.class);
+        i.putExtra("restaurant", selectedRestaurant);
+        i.putExtra("foodType", foodType);
         startActivity(i);
     }
 
     public void loadUI(){
         restaurantSpinner = (Spinner)findViewById(R.id.restaurantSpinner);
 
-        // Set spinner based on restaurant selected in previous activity
+        // Set spinner based on food type selected in previous activity
         switch (foodType){
             case "American":
                 restaurantArray = Arrays.asList(getResources().getStringArray(R.array.a_restaurant_array));
