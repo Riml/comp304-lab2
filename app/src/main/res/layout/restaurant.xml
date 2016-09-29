@@ -9,10 +9,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.comp304.group1.assignment2.MainActivity">
 
+    <Button
+        android:id="@+id/btnNext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/next"
+        android:onClick="onClickBtnNext3"
+        android:layout_marginBottom="148dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="138dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
         <Spinner
             android:id="@+id/restaurantSpinner"
@@ -22,15 +36,15 @@
             android:layout_margin="20dp"
             android:dropDownWidth="match_parent" />
 
-        <Button
-            android:id="@+id/btnNext3"
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/next"
-            android:onClick="onClickBtnNext3" />
-
     </LinearLayout>
+
+    <TextView
+        android:text="Choose Restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/textView2" />
 
 </RelativeLayout>

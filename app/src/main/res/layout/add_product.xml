@@ -39,15 +39,17 @@
             android:text="@string/check_3"
             android:id="@+id/chk3" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/next"
-            android:onClick="onClickBtnNext4"
-            android:id="@+id/btnNext4" />
-
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/next"
+        android:onClick="onClickBtnNext4"
+        android:id="@+id/btnNext4"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="144dp" />
 
 </RelativeLayout>

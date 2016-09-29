@@ -1,5 +1,6 @@
 package com.comp304.group1.assignment2;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -68,6 +69,7 @@ public class OrderInfo extends AppCompatActivity {
     }
 
     public void newOrderClick(View v){
-        // Go back to start of application and place new order
+        Intent i = new Intent(OrderInfo.this, MainActivity.class);
+        startActivity(i);
     }
 }
