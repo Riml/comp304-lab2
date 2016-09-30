@@ -43,7 +43,9 @@ public class OrderInfo extends AppCompatActivity {
         loadUI();
     }
 
+    //loading values into our UI
     private void loadUI(){
+        //Grabbing values from our UI elements
         customerName = (TextView)findViewById(R.id.tvCustomerName);
         customerAddress = (TextView)findViewById(R.id.tvCustomerAddress);
         foodTypeSelected = (TextView)findViewById(R.id.tvFoodType);

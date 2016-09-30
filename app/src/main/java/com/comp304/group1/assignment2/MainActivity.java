@@ -7,6 +7,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    //activity to display logo screen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickBtnNext1(View v){
-
         Intent i = new Intent(MainActivity.this, FoodTypes.class);
+        //launch next activity
         startActivity(i);
 
     }

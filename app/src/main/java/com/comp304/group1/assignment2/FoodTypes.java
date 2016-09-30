@@ -9,6 +9,7 @@ import android.widget.RadioGroup;
 
 public class FoodTypes extends AppCompatActivity {
 
+    //declare required values
     RadioGroup rg;
     String selectedValue;
 

@@ -41,6 +41,7 @@ public class CustDetail extends AppCompatActivity {
         loadUI();
     }
 
+    //Links UI elements from previous activities data
     private void loadUI(){
         submitBtn = (Button)findViewById(R.id.btnSubmit);
         customerName = (EditText)findViewById(R.id.customer_name);

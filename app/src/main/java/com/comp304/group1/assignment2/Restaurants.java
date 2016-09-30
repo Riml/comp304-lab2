@@ -15,6 +15,7 @@ import java.util.List;
 
 public class Restaurants extends AppCompatActivity {
 
+    //declare required values
     String foodType;
     ArrayAdapter restaurantAdapter;
     Spinner restaurantSpinner;
@@ -36,6 +37,7 @@ public class Restaurants extends AppCompatActivity {
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
+        //retrive items from menu resources file and populate overflow menu
         getMenuInflater().inflate(R.menu.restaurant_menu, menu);
         return true;
     }
@@ -48,6 +50,7 @@ public class Restaurants extends AppCompatActivity {
         startActivity(i);
     }
 
+    //dynamic population of the UI
     public void loadUI(){
         restaurantSpinner = (Spinner)findViewById(R.id.restaurantSpinner);
 
@@ -66,7 +69,7 @@ public class Restaurants extends AppCompatActivity {
                 break;
         }
 
-        // Create Array adapter for restaurant spinner
+        // Create Array adapter for restaurant spinner to bind array data
         restaurantAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, restaurantArray);
 

@@ -14,6 +14,7 @@ import java.util.List;
 
 public class AddOrder extends AppCompatActivity {
 
+    //Instantiate our values
     List<String> foodArray = new ArrayList<String>();
     String restaurantSelected, foodType;
     TextView restaurantLabel;
@@ -23,6 +24,7 @@ public class AddOrder extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Setting the content to display once the activity loads.
         setContentView(R.layout.add_product);
 
         // Get food preference and restaurant from previous activity
@@ -36,15 +38,19 @@ public class AddOrder extends AppCompatActivity {
         loadUI();
     }
 
+
     public void onClickBtnNext4(View v){
         Intent i = new Intent(AddOrder.this, CustDetail.class);
+        //Pass values to next activity
         i.putExtra("restaurant", restaurantSelected);
         i.putExtra("foodType", foodType);
+        //retrieve data from checkboxes
         setExtrasFromCheckBoxes(i);
         startActivity(i);
     }
 
     private void loadUI() {
+        //links variables to view components
         restaurantLabel = (TextView) findViewById(R.id.restaurant_name);
         chk1 = (CheckBox) findViewById(R.id.chk1);
         chk2 = (CheckBox) findViewById(R.id.chk2);
@@ -85,6 +91,7 @@ public class AddOrder extends AppCompatActivity {
         chk2.setText(foodArray.get(1));
         chk3.setText(foodArray.get(2));
     }
+
 
     private void setExtrasFromCheckBoxes(Intent intent){
         // Pass all values that are checked to the next activity
